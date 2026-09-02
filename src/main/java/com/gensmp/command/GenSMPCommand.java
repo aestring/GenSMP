@@ -84,13 +84,13 @@ public class GenSMPCommand implements CommandExecutor {
 
     private void sendHelp(Player player) {
         player.sendMessage("\n§6=== GenSMP Help ===");
-        player.sendMessage("§e/gensmp info \u00a77- View your current Gens");
-        player.sendMessage("§e/gensmp withdraw \u00a77- Withdraw your first Gen");
+        player.sendMessage("§e/gensmp info §7- View your current Gens");
+        player.sendMessage("§e/gensmp withdraw §7- Withdraw your first Gen");
         if (player.hasPermission("gensmp.admin")) {
             player.sendMessage("§6Admin Commands:");
-            player.sendMessage("§e/gensmp reroll <player> \u00a77- Reroll starter Gen");
-            player.sendMessage("§e/gensmp give <player> <gen> \u00a77- Give a Gen to player");
-            player.sendMessage("§e/gensmp reload \u00a77- Reload configuration");
+            player.sendMessage("§e/gensmp reroll <player> §7- Reroll starter Gen");
+            player.sendMessage("§e/gensmp give <player> <gen> §7- Give a Gen to player");
+            player.sendMessage("§e/gensmp reload §7- Reload configuration");
         }
         player.sendMessage("§6==================\n");
     }
@@ -101,7 +101,7 @@ public class GenSMPCommand implements CommandExecutor {
         
         if (data.getSlot1() != null) {
             GenType type = data.getSlot1();
-            String status = data.isSlot1Unlocked() ? "§aUnlocked" : §cLocking";
+            String status = data.isSlot1Unlocked() ? "§aUnlocked" : "§cLocked";
             long remaining = data.getSlot1RemainingTime() / 1000;
             player.sendMessage("§eSlot 1: §6" + type.getDisplayName() + " Gen " + status);
             if (remaining > 0) {
@@ -113,7 +113,7 @@ public class GenSMPCommand implements CommandExecutor {
 
         if (data.getSlot2() != null) {
             GenType type = data.getSlot2();
-            String status = data.isSlot2Unlocked() ? "§aUnlocked" : §cLocking";
+            String status = data.isSlot2Unlocked() ? "§aUnlocked" : "§cLocked";
             long remaining = data.getSlot2RemainingTime() / 1000;
             player.sendMessage("§eSlot 2: §6" + type.getDisplayName() + " Gen " + status);
             if (remaining > 0) {
