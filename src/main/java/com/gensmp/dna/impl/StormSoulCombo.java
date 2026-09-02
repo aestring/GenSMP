@@ -22,6 +22,6 @@ public class StormSoulCombo extends DNACombination {
     public void execute(Player player) {
         player.sendMessage("§6[GenSMP] §aCloud spirit summoned!");
         // Spawn cloud entity above player
-        player.addPotionEffect(new PotionEffect(PotionEffectType.JUMP_BOOST, 20 * 15, 0));
+        player.addPotionEffect(new PotionEffect(PotionEffectType.LEVITATION, 20 * 15, 0));
     }
 }
