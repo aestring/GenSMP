@@ -1,0 +1,38 @@
+name: GenSMP
+version: 1.0.0
+main: com.gensmp.GenSMP
+description: A DNA/Gen-based ability system for Minecraft
+authors: [ "GenSMP Developer" ]
+api-version: "1.20"
+
+commands:
+  gensmp:
+    description: Main GenSMP command
+    usage: /gensmp <subcommand>
+    aliases: [ "gen" ]
+    permission: gensmp.use
+
+permissions:
+  gensmp.use:
+    description: Allows player to use GenSMP commands
+    default: true
+  gensmp.admin:
+    description: Grants all admin permissions
+    default: op
+    children:
+      gensmp.admin.reroll: true
+      gensmp.admin.give: true
+      gensmp.admin.reload: true
+      gensmp.admin.info: true
+  gensmp.admin.reroll:
+    description: Allows rerolling player starter Gens
+    default: op
+  gensmp.admin.give:
+    description: Allows giving Gens to players
+    default: op
+  gensmp.admin.reload:
+    description: Allows reloading plugin configuration
+    default: op
+  gensmp.admin.info:
+    description: Allows viewing player Gen info
+    default: op
