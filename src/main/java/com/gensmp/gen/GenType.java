@@ -9,7 +9,7 @@ public enum GenType {
     STRENGTH("strength", "Strength", Material.GOLDEN_APPLE),
     STORM("storm", "Storm", Material.LIGHTNING_ROD),
     FIRE("fire", "Fire", Material.CAMPFIRE),
-    FROST("frost", "Frost", Material.POWDER_SNOW),
+    FROST("frost", "Frost", Material.BLUE_ICE),
     WATER("water", "Water", Material.HEART_OF_THE_SEA),
     SCULK("sculk", "Sculk", Material.SCULK_CATALYST),
     SOUL("soul", "Soul", Material.SOUL_CAMPFIRE),
