@@ -1,0 +1,39 @@
+# GenSMP Configuration File
+# Version: 1.0.0
+
+# Ability Settings
+abilities:
+  # Cooldown in seconds for Gen abilities
+  cooldown: 30
+
+# DNA Combination Settings
+dna:
+  # Cooldown in seconds for DNA combination abilities
+  cooldown: 90
+
+# Gen Settings
+gens:
+  # Time in milliseconds before a newly obtained Gen unlocks
+  unlock_time: 600000  # 10 minutes
+
+# Player Data
+player-data:
+  # Auto-save interval in minutes
+  auto-save-interval: 5
+
+# Messages
+messages:
+  prefix: "§6[GenSMP] "
+  no-permission: "§cYou don't have permission to use this command."
+  invalid-command: "§cInvalid command. Use /gensmp help for commands."
+  ability-locked: "§cYour Gen ability is still locked!"
+  ability-cooldown: "§cAbility is on cooldown for %ds"
+  gen-obtained: "§aYou obtained the §6%s Gen§a!"
+  gen-withdrawn: "§aYou withdrew your §6%s Gen§a!"
+  gen-withdrawn-empty: "§cYou don't have a Gen to withdraw!"
+  gen-already-have-two: "§cYou already have 2 Gens!"
+  player-not-found: "§cPlayer §6%s§c not found!"
+  give-success: "§aGave §6%s Gen§a to §6%s§a!"
+  give-invalid-gen: "§cInvalid Gen: §6%s§c!"
+  reroll-success: "§aRerolled starter Gen for §6%s§a! They got §6%s Gen§a!"
+  gen-first-time: "§6Welcome! You received the §a%s Gen§6!"
