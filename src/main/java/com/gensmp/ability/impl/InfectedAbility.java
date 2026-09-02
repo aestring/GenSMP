@@ -23,7 +23,7 @@ public class InfectedAbility extends Ability {
         player.removePotionEffect(PotionEffectType.WITHER);
         player.removePotionEffect(PotionEffectType.SLOWNESS);
         player.removePotionEffect(PotionEffectType.WEAKNESS);
-        player.removePotionEffect(PotionEffectType.NAUSEA);
+        player.removePotionEffect(PotionEffectType.CONFUSION);
 
         player.sendMessage("§6[GenSMP] §aNegative effects cleansed!");
     }
