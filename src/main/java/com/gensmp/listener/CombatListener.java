@@ -29,7 +29,7 @@ public class CombatListener implements Listener {
         PlayerGenData attackerData = plugin.getPlayerDataManager().getPlayerData(attacker);
         
         // Apply damage modifiers based on attacker's Gen
-        if (attackerData.hasGen(GenType.STRENGTH) && attackerData.getSlot1Unlocked()) {
+        if (attackerData.hasGen(GenType.STRENGTH) && attackerData.isSlot1Unlocked()) {
             event.setDamage(event.getDamage() * 1.1); // 10% damage boost
         }
     }
