@@ -21,7 +21,7 @@ public class InfectedAbility extends Ability {
         // Remove negative effects
         player.removePotionEffect(PotionEffectType.POISON);
         player.removePotionEffect(PotionEffectType.WITHER);
-        player.removePotionEffect(PotionEffectType.SLOWNESS);
+        player.removePotionEffect(PotionEffectType.SLOW);
         player.removePotionEffect(PotionEffectType.WEAKNESS);
         player.removePotionEffect(PotionEffectType.CONFUSION);
 
