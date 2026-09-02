@@ -11,6 +11,7 @@ import com.gensmp.passive.PassiveManager;
 import com.gensmp.player.PlayerDataManager;
 import com.gensmp.recipe.GenRecipeManager;
 import com.gensmp.util.ConfigManager;
+import org.bukkit.NamespacedKey;
 import org.bukkit.plugin.java.JavaPlugin;
 
 /**
@@ -83,6 +84,13 @@ public class GenSMP extends JavaPlugin {
 
     public static GenSMP getInstance() {
         return instance;
+    }
+
+    /**
+     * Creates a NamespacedKey for GenSMP
+     */
+    public NamespacedKey getNamespacedKey(String key) {
+        return new NamespacedKey(this, key);
     }
 
     // Getter methods for managers
